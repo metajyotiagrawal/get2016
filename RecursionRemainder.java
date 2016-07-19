@@ -7,7 +7,7 @@ public class RecursionRemainder {
 	if(y==0&&x<0){                      //to check illegal condition
 		throw new IllegalArgumentException();
 	}
-	if((x-y)>x){                          
+	if((x<y){                          
 	    return x;
 	       }
 	else{
