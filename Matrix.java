@@ -52,12 +52,10 @@ public class Matrix {
 		Matrix ob = new Matrix(3, 3);
 		int value[][] = { { 1, 2, 3 }, { 3, 4, 5 }, { 7, 8, 9 } };
 		ob.getMatrix(value, ob);
-		System.out.print("Input matrix is:");
-		System.out.println();
+		System.out.println("Input matrix is:");
 		ob.show(ob);
 		ob.transpose(ob);
-		System.out.print("Transpose matrix is:");
-		System.out.println();
+		System.out.println("Transpose matrix is:");
 		ob.show(ob);
 	}
 }
