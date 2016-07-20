@@ -53,9 +53,11 @@ public class Matrix {
 		int value[][] = { { 1, 2, 3 }, { 3, 4, 5 }, { 7, 8, 9 } };
 		ob.getMatrix(value, ob);
 		System.out.print("Input matrix is:");
+		System.out.print();
 		ob.show(ob);
 		ob.transpose(ob);
 		System.out.print("Transpose matrix is:");
+		System.out.print();
 		ob.show(ob);
 	}
 }
