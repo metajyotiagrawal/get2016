@@ -14,7 +14,7 @@ public class Turn {
 	/*
 	 * set the turn of player
 	 */
-	public static void setPlayerTurn() {
+	public static void setPlayerCount() {
 
 		Turn.playerTurn = (++playerTurn) % 2;
 	}
