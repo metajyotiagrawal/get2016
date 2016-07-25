@@ -31,6 +31,10 @@ public class QuestionRead {
 			e.printStackTrace();
 		}
 	}
+	public String[] getquestion()
+	{
+		return ques1;
+	}
 
 	public static void main(String args[]) {
 		QuestionRead qr = new QuestionRead();
