@@ -33,7 +33,7 @@ public class EditMenu {
 	}	
 	
 /*
- * fuction to enter font siize by user
+ * fuction to enter font size by user
  */
 	public void getFontSize() {
 		System.out.println("Available Font Size");
