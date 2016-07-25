@@ -26,27 +26,27 @@ public class TikTacToc {
 			Player[] p1 = new Player[2];
 			p1[0] = new Player('X');
 			p1[1] = new Player('O');
-			while (Turn.getTurnCount() < 9) {
+			while (Turn.getturnCount() < 9) {
 				p1[Turn.getPlayerTurn()].makeMove(sc);
-				State.showGrid();
+				State.showgrid();
 				if (RuleCheck.isWin()) {
 					System.out.println(p1[Turn.getPlayerTurn()].playerName()
 							+ " Wins !!!!");
 					break;
 				}
-				Turn.setTurnCount();
+				Turn.setturnCount();
 				Turn.setPlayerTurn();
 			}
 		} else {
 			Player p1 = new Player('X');
 			ComputerAI com = new ComputerAI('O');
-			while (Turn.getTurnCount() < 9) {
+			while (Turn.getturnCount() < 9) {
 				if(Turn.getPlayerTurn() == 0){
 					p1.makeMove(sc);
 				}else{
 					com.makePlay();
 				}
-				State.showGrid();
+				State.showgrid();
 				if (RuleCheck.isWin() && Turn.getPlayerTurn() == 0) {
 					System.out.println(p1.playerName() + " Wins !!!!");
 					break;
@@ -54,11 +54,11 @@ public class TikTacToc {
 					System.out.println("Computers Wins !!!!");
 					break;
 				}
-				Turn.setTurnCount();
+				Turn.setturnCount();
 				Turn.setPlayerTurn();
 			}
 		}
-		if (Turn.getTurnCount() == 9) {
+		if (Turn.getturnCount() == 9) {
 			System.out.println("Match is draw !!!!!!");
 		}
 	}
