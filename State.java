@@ -18,7 +18,7 @@ public class State {
 	 * set the state of grid
 	 */
 	public static void setGrid(int row, int col, char symbol) {
-		grid[row][col] = symbol;
+		State.grid[row][col] = symbol;
 	}
 
 	/*
