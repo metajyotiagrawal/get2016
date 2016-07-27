@@ -6,7 +6,7 @@ package assignment;
 import java.util.Scanner;
 
 /**
- * @author Ajinkya pande
+ * @author jyoti
  *
  */
 public class TikTacToc {
