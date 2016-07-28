@@ -1,7 +1,7 @@
 package DS1;
 
 import java.util.Scanner;
-
+//class to implement single linked list
 public class SingleLinkedlist<E> {
 	Node<E> start = new Node();
 	Node<E> currentNode = null;
@@ -95,11 +95,14 @@ public static void main(String args[]){
 	le.add("fifth");	
 	le.traverse();
 	le.removeItem("third");
+	System.out.println("list after removing item");
 	le.traverse();
-	//le.removeAtIndex(2);
-	//le.traverse();
-	//le.retrieve(1);
-	//le.traverse();
+	le.removeAtIndex(2);
+        System.out.println("list after removing item from given index");
+	le.traverse();
+	le.retrieve(1);
+	System.out.println("retrieving element");
+	le.traverse();
 	System.out.println("reverse list is");
 	le.reverseList();
 	le.traverse();
