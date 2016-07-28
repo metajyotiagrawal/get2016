@@ -1,5 +1,5 @@
 package DS1;
-
+//class to implement doubly linkedlist
 public class DoublyLinkedlist<E> {
 DoubleNode<E> start=new DoubleNode<E>();
 DoubleNode<E> current=null;
