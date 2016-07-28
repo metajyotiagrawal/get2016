@@ -1,6 +1,8 @@
 package ds1;
 
 import java.util.Scanner;
+//class to add to arraylist
+
 
 public class AddArrayList {
 
