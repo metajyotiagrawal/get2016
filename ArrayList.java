@@ -1,10 +1,13 @@
 package ds1;
-
+/**
+ * class to implement arraylist using array
+ * different function to perform diferent operation
+ **/
 public class ArrayList<E> {
 	int maxSize = 5;
 	Object dataArray[] = new Object[maxSize];
 	int count = 0;
-
+//function to add element in array if array size is small then resize array
 	public void add(Object data) {
 
 		if (count < maxSize) {
@@ -28,7 +31,7 @@ public class ArrayList<E> {
 		}
 
 	}
-
+//function to add element at particular position
 	public boolean addAtLocation(int position, E data) {
 		System.out.println(" count is" + count + "max_size" + maxSize);
 		int j;
@@ -56,14 +59,14 @@ public class ArrayList<E> {
 		}
 
 	}
-
+//function to print array
 	void display() {
 
 		for (int i = 0; i < count; i++) {
 			System.out.println("Data is" + dataArray[i]);
 		}
 	}
-
+//function to retrieve element from particular location
 	public int retrieveIndex(Object data) {
 
 		for (int i = 0; i < count; i++) {
@@ -83,7 +86,7 @@ public class ArrayList<E> {
 		return -1;
 
 	}
-
+//function to remove data from particular location
 	boolean removeDataOfLocation(int location) {
 
 		if (location < count) {
@@ -119,7 +122,7 @@ public class ArrayList<E> {
 		count = 0;
 
 	}
-
+//function to reverse list
 	void reverseList() {
 		int i = 0, j = count - 1;
 		Object temp = new Object();
