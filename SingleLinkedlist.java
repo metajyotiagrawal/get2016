@@ -20,7 +20,7 @@ public class SingleLinkedlist<E> {
 		}
 
 		}
-	
+	//function to traverse single linklist
 	public void traverse(){
 		currentNode=start;
 		while(currentNode.next!=null){
@@ -29,6 +29,7 @@ public class SingleLinkedlist<E> {
 			
 		}
 	}
+	//function to remove item from list
 	public void removeItem(E item){
 		Node<E> prev=new Node();
 		currentNode = start.next;
@@ -48,6 +49,7 @@ public class SingleLinkedlist<E> {
 				}
 			}
 }
+//function to remove element from particular index
 public void removeAtIndex(int index)	
 {
 	Node<E> prev=new Node();
@@ -60,6 +62,7 @@ public void removeAtIndex(int index)
 	}
 	prev.next=currentNode.next;
 }
+//function to retrieve element from a particular index
 public void retrieve(int index){
 	currentNode=start;
 	for(int i=0;i<index;i++){
@@ -67,6 +70,7 @@ public void retrieve(int index){
 	}
 	System.out.println(currentNode.value);
 }
+//function to reverse list
 void reverseList() {
 
 if (start.next == null) {
