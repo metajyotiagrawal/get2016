@@ -1,5 +1,5 @@
 package DS1;
-
+//class used to define node of single linklist
 public class Node<E> {
 	public E value;
 	Node<E> next;
