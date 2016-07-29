@@ -1,5 +1,5 @@
 package DS1;
-
+//class to define node of doubly linklist
 public class DoubleNode<E> {
 E value;
 DoubleNode<E> prev;
