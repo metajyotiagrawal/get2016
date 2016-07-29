@@ -22,6 +22,7 @@ void add(E data) {
 	}
 
 	}
+	//function to traverse the list
 public void traverse(){
 	current=start;
 	while(current.next!=null){
@@ -30,6 +31,7 @@ public void traverse(){
 		
 	}
 }
+//function to remove item from list
 public void removeItem(E item){
 	DoubleNode<E> previous=new DoubleNode();
 	current = start.next;
@@ -48,7 +50,7 @@ public void removeItem(E item){
 			}
 		}
 }
-
+//function to remove value from index
 public void removeAtIndex(int index)	
 {
 	DoubleNode<E> previous=new DoubleNode();
@@ -61,7 +63,7 @@ public void removeAtIndex(int index)
 	}
 	previous.next=current.next;
 }
-
+//function to retrieve at particular index 
 public void retrieve(int index){
 	current=start;
 	for(int i=0;i<index;i++){
@@ -69,6 +71,7 @@ public void retrieve(int index){
 	}
 	System.out.println(current.value);
 }
+//function to reverse the values of list
 public void reverse()
 {
 current = last;	
