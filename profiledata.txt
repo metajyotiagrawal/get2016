@@ -1,3 +1,1 @@
-1 jyoti	mathura	female	22
-2 amita	jaipur	female	22
-3 amit	mathura	male	22
+1,jyoti,mathura,female,22
