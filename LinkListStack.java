@@ -41,10 +41,10 @@ public class LinkListStack {
 					push(data);
 				else {
 					char previous = peek();
-					if(precedence(previous) <= precedence(data) || data == '(') {
+					if(precedence(previous) < precedence(data) || data == '(') {
 						push(data);
 					}else{
-						while(precedence(previous) > precedence(data) && !stack.isEmpty()){
+						while(precedence(previous) >= precedence(data) && !stack.isEmpty()){
 							if(!(peek() == '('))
 								output += pop();
 							else{
