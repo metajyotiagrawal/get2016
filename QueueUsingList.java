@@ -16,8 +16,13 @@ public void enqueue(int num)
 
 //function to implement dequeue operation of queue
 public void dequeue(int num)
-{
+{    if(lnklst.size()==0){
 	lnklst.remove(num);
+}
+else
+{
+	System.out.println("Queue is empty");
+}
 }
 
 //function to display list
