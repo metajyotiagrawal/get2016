@@ -18,7 +18,6 @@ public class Admin {
 		String str = sc.next();
 		Job newjob = new Job(str);
 		Insert(newjob);
-		sc.close();
 	}
 /*
  * to insert jb object in array jobheap
