@@ -18,7 +18,6 @@ public class GuestHouse {
 		System.out.println("Enter total number of rooms in guestHouse");
 		totalRooms = sc.nextInt();
 		ghMap = new GuestHouseEntry[totalRooms];
-		sc.close();
 	}
 	
 //to enter total number of guest by user
@@ -27,7 +26,6 @@ public class GuestHouse {
 		System.out
 				.println("Enter total number of guests, should be less than total rooms");
 		totalGuests = sc.nextInt();
-		sc.close();
 	}
 	
 //to set room number to each room
@@ -80,7 +78,6 @@ public class GuestHouse {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter name");
 		String str = sc.next();
-		sc.close();
 		return str;
 		
 	}
@@ -90,7 +87,6 @@ public class GuestHouse {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter age");
 		int ag = sc.nextInt();
-		sc.close();
 		return ag;
 	}
 
