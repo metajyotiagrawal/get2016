@@ -1,0 +1,19 @@
+create database if not exists libraryinformation;
+use libraryinformation;
+create table if not exists members_details(member_id varchar(20) primary key,member_name varchar(50) not null,addressLine1 varchar(50),addressLine2 varchar(50),category varchar(10));
+create table if not exists Book(accession_num varchar(20) primary key,title_id int not null,purchase_date DATE not null,price int,status int(1));
+create table if not exists BookIssue(issue_dt date,accession_num varchar(20),member_id varchar(20),due_date date,primary key(issue_dt,accession_num,member_id),foreign key(accession_num) references Book(accession_num),foreign key(member_id) references members_details(member_id));
+create table if not exists BookReturn(return_dt date,accession_num varchar(20),member_id varchar(20),issue_dt date,primary key(return_dt,accession_num,member_id),foreign key(accession_num) references Book(accession_num),foreign key(member_id) references members_details(member_id));
+create table if not exists subjects(subject_id varchar(10) primary key,subject_name varchar(20));
+create table if not exists publisher(publisher_id varchar(20) primary key,publisher_name varchar(20));
+create table if not exists titles(title_id varchar(10) primary key,title_name varchar(20),subject_id varchar(10),publisher_id varchar(20),foreign key(subject_id) references Subjects(subject_id),foreign key(publisher_id) references publisher(publisher_id));
+create table if not exists authors(author_id varchar(10) primary key,author_nm varchar(20));
+create table if not exists title_author(title_id varchar(10),author_id varchar(10),foreign key(title_id) references titles(title_id),foreign key(author_id) references authors(author_id));
+show tables;
+drop table BookIssue;
+drop table  BookReturn;
+drop table  members_details;
+create table if not exists members_details(member_id varchar(20) primary key,member_name varchar(50) not null,addressLine1 varchar(50),addressLine2 varchar(50),category varchar(10));
+create table if not exists BookIssue(issue_dt date,accession_num varchar(20),member_id varchar(20),due_date date,primary key(issue_dt,accession_num,member_id),foreign key(accession_num) references Book(accession_num),foreign key(member_id) references members_details(member_id));
+create table if not exists BookReturn(return_dt date,accession_num varchar(20),member_id varchar(20),issue_dt date,primary key(return_dt,accession_num,member_id),foreign key(accession_num) references Book(accession_num),foreign key(member_id) references members_details(member_id));
+
