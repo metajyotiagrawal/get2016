@@ -13,6 +13,9 @@ SET FOREIGN_KEY_CHECKS=0;
  delete from publisher;
 delete from titles  where publisher_id='P123';
  SET FOREIGN_KEY_CHECKS=1;
+ set @substituteId='P145';
+set @substituteName='N Publication';
+insert into publisher values(@substituteId,@substituteName);
 
 
 
