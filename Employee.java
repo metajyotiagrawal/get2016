@@ -1,4 +1,4 @@
-package DS6;
+package ds6;
 
 import java.util.Comparator;
 
