@@ -1,4 +1,4 @@
-package DS7;
+package ds7;
 
 import static org.junit.Assert.*;
 
