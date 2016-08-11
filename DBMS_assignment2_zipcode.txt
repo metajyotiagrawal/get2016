@@ -1,0 +1,34 @@
+
+CREATE DATABASE zipentry;
+CREATE TABLE stateZip (state_zip VARCHAR(10) PRIMARY KEY,state_name VARCHAR(20));
+CREATE TABLE zipCodes (city VARCHAR(20),state VARCHAR(20),city_zip int PRIMARY KEY AUTO_INCREMENT);
+INSERT INTO stateZip VALUES('A','Assam');
+
+INSERT INTO stateZip VALUES('G','Goa');
+INSERT INTO stateZip VALUES('K','Kerala');
+INSERT INTO stateZip VALUES('M','MP');
+INSERT INTO stateZip VALUES('R','Rajasthan');
+INSERT INTO stateZip VALUES('P','Punjab');
+INSERT INTO zipCodes (city,state) VALUES('jodhpur','Rajasthan');
+INSERT INTO zipCodes (city,state) VALUES('amritsar','Punjab');
+INSERT INTO zipCodes (city,state) VALUES('chandigarh','Punjab');
+INSERT INTO stateZip VALUES('B','Bihar');
+INSERT INTO stateZip VALUES('C','Chattisgarh');
+INSERT INTO zipCodes (city,state) VALUES('raipur','Chattisgarh');
+INSERT INTO zipCodes (city,state) VALUES('bilaspur','Chattisgarh');
+INSERT INTO zipCodes (city,state) VALUES('panaji','Goa');
+INSERT INTO zipCodes (city,state) VALUES('margoa','Goa');
+INSERT INTO zipCodes (city,state) VALUES('kochi','Kerala');
+INSERT INTO zipCodes (city,state) VALUES('kollam','Kerala');
+INSERT INTO zipCodes (city,state) VALUES('bhopal','MP');
+INSERT INTO zipCodes (city,state) VALUES('indore','MP');
+INSERT INTO zipCodes (city,state) VALUES('jaipur','Rajasthan');
+INSERT INTO zipCodes (city,state) VALUES('patna','Bihar');
+INSERT INTO zipCodes (city,state) VALUES('muzaffarpur','Bihar');
+INSERT INTO zipCodes (city,state) VALUES('guwahati','Assam');
+INSERT INTO zipCodes (city,state) VALUES('tezpur','Assam');
+
+SELECT state_name,city, CONCAT(s.state_zip,z.city_zip) AS Zip_Code
+FROM zipCodes z
+INNER JOIN stateZip s
+ON s.state_name=z.state;

@@ -1,0 +1,52 @@
+INSERT into members_details values('E321','karthik','E-45 PIC','chennai','M');
+INSERT into subjects values('S124','DBMS1');
+INSERT into subjects values('S125','DBMS2');
+INSERT into subjects values('S126','DBMS3');
+INSERT into publisher values('P124','G Publication');
+INSERT into publisher values('P125','G Publication');
+INSERT into publisher values('P126','G Publication');
+INSERT  into titles values('T124','Go DBMS1','S124','P124');
+INSERT into titles values('T125','Go DBMS2','S125','P125');
+INSERT into titles values('T126','Go DBMS3','S126','P126');
+INSERT into Book values('B124',2,'1995-05-13',230,0);
+INSERT into Book values('B125',3,'2000-05-13',300,1);
+INSERT into Book values('B126',4,'1998-05-13',550,0);
+
+INSERT into BookIssue values(curdate(),'B124','E321',curdate()+15);
+INSERT into BookIssue values(curdate(),'B125','E124',curdate()+15);
+INSERT into BookIssue values(curdate(),'B126','E128',curdate()+15);
+INSERT into BookReturn values('2016-09-13','B124','E321',curdate());
+
+INSERT into BookReturn (accession_num,member_id,issue_dt ) values('B125','E124',curdate());
+INSERT into BookReturn values('2016-09-13','B126','E128',curdate());
+
+
+INSERT into members_details values('E124','manish','B-45 malvi park','Kanpur','F');
+INSERT into members_details values('E128','manisha','B-99 krishna nagar','shimla','F');
+SELECT member_id,member_name ,addressLine1,addressLine2 ,category FROM members_details;
+SELECT member_id,member_name ,category FROM members_details;
+SELECT member_id,member_name ,category FROM members_details WHERE category='M';
+SELECT category FROM members_details;
+SELECT member_name,category FROM members_details ORDER BY member_name DESC;
+SELECT title_name ,subject_id ,publisher_id FROM titles;
+SELECT COUNT(member_name), category
+FROM members_details
+GROUP BY category;
+SELECT member_name 
+FROM members_details 
+WHERE category=(SELECT category FROM members_details WHERE member_name='manisha');
+
+SELECT return_dt ,accession_num,member_id ,issue_dt,
+IFNULL(return_dt,'not returned') as return_date
+FROM BookReturn;
+
+
+
+SELECT m.member_name ,issue_dt
+FROM members_details m
+LEFT JOIN BookReturn b
+ON m.member_id=b.member_id
+ORDER BY issue_dt ASC,m.member_name ASC;
+
+
+

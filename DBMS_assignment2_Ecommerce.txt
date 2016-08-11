@@ -1,0 +1,54 @@
+CREATE DATABASE Ecommerce;
+CREATE TABLE electronics (product_id varchar(10) PRIMARY KEY , product_name varchar(30),parent_id varchar(10));
+ALTER TABLE electronics ADD CONSTRAINT parent_id FOREIGN KEY(parent_id) REFERENCES electronics (product_id); 
+
+
+
+INSERT INTO electronics(product_id,product_name) values('E001','mobiles and tablets');
+INSERT INTO electronics(product_id,product_name) values('E002','computers');
+INSERT INTO electronics(product_id,product_name) values('E003','home appliances');
+INSERT INTO electronics values('E011','mobiles','E001');
+INSERT INTO electronics values('E021','tablets','E001');
+INSERT INTO electronics values('E031','accessories','E001');
+INSERT INTO electronics values('E041','cases & covers','E001');
+INSERT INTO electronics values('E111','smart phones','E011');
+INSERT INTO electronics values('E211','featured phones','E011');
+INSERT INTO electronics values('E121','2G','E021');
+INSERT INTO electronics values('E221','3G','E021');
+INSERT INTO electronics values('E012','desktop','E002');
+INSERT INTO electronics values('E022','laptop','E002');
+INSERT INTO electronics values('E032','laptop accesories','E002');
+INSERT INTO electronics values('E042','printers','E002');
+INSERT INTO electronics values('E132','keyboard','E032');
+INSERT INTO electronics values('E232','mouse','E032');
+INSERT INTO electronics values('E332','head phones','E032');
+INSERT INTO electronics values('E142','inkjet','E042');
+INSERT INTO electronics values('E242','laser','E042');
+INSERT INTO electronics values('E013','TVs','E003');
+INSERT INTO electronics values('E023','air conditioners','E003');
+INSERT INTO electronics values('E033','washing machines','E003');
+INSERT INTO electronics values('E113','LED','E013');
+INSERT INTO electronics values('E213','LCD','E013');
+INSERT INTO electronics values('E313','plasma','E013');
+INSERT INTO electronics values('E133','full automatic','E033');
+INSERT INTO electronics values('E233','semi automatic','E033');
+
+SELECT product_id , product_name,parent_id  FROM electronics;
+
+SELECT product_id , product_name,parent_id 
+FROM electronics
+ORDER BY parent_id;
+
+SELECT product_id , product_name, 
+IFNULL( parent_id,'TOP category') AS parent_id
+FROM electronics
+ORDER BY parent_id DESC;
+
+SELECT product_id , product_name, 
+IFNULL( parent_id,'TOP category') AS parent_id
+FROM electronics
+WHERE parent_id IS null;
+
+
+
+
