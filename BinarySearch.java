@@ -1,4 +1,4 @@
-package DS7;
+package ds7;
 /**
  * class to implement binary search
  * and to find the leftmost position of number in array 
@@ -14,7 +14,7 @@ public class BinarySearch {
 		int mid = (lowerlimit + upperLimit) / 2;
 		
 		//condition to return -1 if number is not found in array
-		if (mid == 0 && arr[mid] != num) {
+		if (mid == 0 && arr[mid] != num || mid==upperLimit-1 && arr[mid]!=num) {
 			System.out.println("-1");
 			return -1;
 		}
