@@ -1,7 +1,7 @@
 INSERT into members_details values('E123','raj','A-32 raja park','delhi','M');
 INSERT into Book values('B123',1,'1995-05-13',250,1);
 INSERT into BookIssue values(curdate(),'B123','E123',curdate()+15);
-INSERT into BookReturn values('2016-09-13','B123','E123',curdate());
+INSERT into BookReturn values('2016-09-13','B123','E123',DATE_ADD(OrderDate,INTERVAL 15 DAY));
 INSERT into subjects values('S123','DBMS');
 INSERT into publisher values('P123','G Publication');
 INSERT into titles values('T123','Go DBMS','S123','P123');
