@@ -1,0 +1,36 @@
+body{
+	border-style: solid;
+	border-width: 20px 10px 10px 10px;
+	border-color:Blue ;
+}
+h1{
+background : AliceBlue ;
+Color : Crimson ;
+border-style: solid;
+border-width: 2px;
+border-color: Aqua;
+padding: 3px;
+margin: 20px 20px 20px 20px;
+}
+#profile{
+float: left;
+height : 1000px;
+margin: 20px 20px 20px 20px;
+
+}
+#infoField{
+Color : CadetBlue;
+position : relative;
+left : -300px;
+}
+#info{
+Color : CadetBlue;
+position : relative;
+left : -200px;
+top : -20px;
+}
+h2{
+position : relative;
+left : -300px;
+
+}
