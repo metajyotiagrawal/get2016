@@ -1,0 +1,29 @@
+body{
+	border-style: solid;
+	border-width: 20px 10px 10px 10px;
+	border-color:Blue ;
+}
+h1{
+background : AliceBlue ;
+Color : Crimson ;
+border-style: solid;
+border-width: 2px;
+border-color: Aqua;
+padding: 3px;
+margin: 20px 20px 20px 20px;
+}
+#profile
+{
+	height: 100%;
+	float:left;
+	margin: 20px 20px 20px 20px;
+}
+#information
+{
+	position : relative;
+	left:20px;
+}
+#additional,#personal,#general
+{
+	margin: 0 0 50px 0;
+}
