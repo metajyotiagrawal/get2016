@@ -1,0 +1,46 @@
+.main #list,#list1,#list3,#list4
+{list-style-type: none;
+margin: 0;
+padding: 0;
+width: 350px;
+
+}
+.main #list li
+{display: inline;
+}
+.main #block
+{position: fixed;
+    width: 350px;
+}
+.main #block1
+{position: absolute;
+left: 500px;
+top: 140px;
+    width: 450px;
+    height: 80px;
+}
+.main img
+{width: 250px;
+}
+.main #block2
+{
+position: absolute;
+left: 1100px;
+top: 140px;
+    width: 400px;
+    height: 80px;
+}
+.main #start
+{text-align: center;
+background-color: AliceBlue;
+}
+.main #end
+{position: fixed;
+top: 600px;
+}
+.main
+{border-style: solid;
+	border-width: 20px 10px 10px 10px;
+	border-color:Blue ;
+border-height: 100%;
+}
