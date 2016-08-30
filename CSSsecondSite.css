@@ -1,0 +1,173 @@
+@CHARSET "ISO-8859-1";
+body{
+	height: 100vh;
+}
+
+#start,#second
+{
+	display:block;
+}
+#start h3 {
+	margin-left: 1%;
+	display: inline;
+	color: white;
+}
+
+#anchor {
+	float: right;
+	margin-right: 1%;
+}
+
+#anchor a {
+	color: white;
+}
+
+#anchor a:hover {
+	color: blue;
+}
+
+#start {
+	background-color: DarkOliveGreen;
+}
+
+#second {
+	background-color: DarkKhaki;
+	padding: 1%;
+}
+
+#second h1 {
+	padding: 0.3%;
+	color: white;
+	text-align: center;
+	width: 30%;
+	border-style: solid;
+	border-color: white;
+	border-width: 0.5%;
+	margin-left: 33%;
+}
+
+#second p, button {
+	text-align: center;
+}
+
+#second button {
+	margin-left: 46%;
+}
+
+#para1 {
+	text-align: center;
+}
+#div2
+{
+	display:inline-block;
+	width: 100%;
+}
+
+ #div21, #div22, #div23, #div24 {
+	width: 20%;
+	float:left;
+	display: inline-block;
+	padding-left: 5%;
+}
+
+.second:BEFORE {
+	background-image: url('mobile.png');
+	background-size: 10px 20px;
+	display: inline-block;
+	width: 10px;
+	height: 20px;
+	content: "";
+}
+
+.first:BEFORE {
+	background-image: url('plain.png');
+	background-size: 10px 20px;
+	display: inline-block;
+	width: 10px;
+	height: 20px;
+	content: "";
+}
+
+.third:BEFORE {
+	background-image: url('window.png');
+	background-size: 10px 20px;
+	display: inline-block;
+	width: 10px;
+	height: 20px;
+	content: "";
+}
+
+.fourth:BEFORE {
+	background-image: url('checked.png');
+	background-size: 10px 20px;
+	display: inline-block;
+	width: 10px;
+	height: 20px;
+	content: "";
+}
+
+#img1,#img2 {
+	width: 100%;
+	padding-left: 3%;
+}
+#image1,#image2
+{ 
+	display:inline-block;
+	float: left;
+	width: 40%;
+	margin: 2%;
+}
+#images
+{
+	display: inline-block;
+	float:left;
+	margin-left: 5%;
+	margin-top: 3%;
+}
+
+#div3 #content {
+	width:58%;
+	float: left;
+	padding: 0 7% 0 0;
+	display: inline-block;
+	margin-top: 3%;
+}
+
+#div3 {
+	padding: 0.5% 0 0.5% 0;
+	color: white;
+	background-color: DarkSeaGreen;
+	height: 25%;
+}
+
+#last #head {
+	text-align: center;
+}
+#last
+{
+	display: inline-block;
+	width:100%;
+}
+#last #form {
+	display: block-inline;
+	float: left;
+	width:40%;
+	margin-left: 5%;
+}
+
+#right {
+	float: left;
+	width:55%;
+	
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+	width: 45%;
+}
+
+#footer p {
+	position: absolute;
+	width: 99%;
+	text-align: center;
+	background-color: LightGreen;
+}

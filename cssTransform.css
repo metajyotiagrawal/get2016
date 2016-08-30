@@ -1,0 +1,53 @@
+
+#div1{
+	background-color:LightSeaGreen ;
+	width: 100px;
+	height: 100px;
+	transition:transform 5s;
+	margin-top:100px;
+	margin-left:0;
+	
+}
+#div1:HOVER{
+	transform:rotate(180deg);
+	
+}
+#div2{
+	background-color:LightCoral ;
+	width: 100px;
+	height: 100px;
+	transition:transform 5s;
+margin-left	:25%;
+margin-top:-100px;
+
+	
+}
+#div2:HOVER{
+	transform: translate(50px,50px) ;
+	
+}
+#div3{
+	background-color:MediumSlateBlue ;
+	width: 100px;
+	height: 100px;
+	box-shadow:5px 5px 10px MediumSlateBlue;
+	transition:transform 5s;
+	margin-left :50%;
+	margin-top:-100px;
+}
+#div3:HOVER{
+	transform: scale(1.5,1.5);
+									
+}
+#div4{
+	background-color:MediumVioletRed;
+	width: 100px;
+	height: 100px;
+	transition:transform 5s;
+	margin-left :75%;
+	margin-top:-100px;
+}
+#div4:HOVER{
+	transform:skew(30deg,30deg);
+	
+}
