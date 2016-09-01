@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link href="formStyle.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+<header id="header">Contact Us Today !</header>
+<section id="section">
+	<form action="submitted.png" method="post">
+		<p>First Name:</p>
+		<span class="fa fa-group"></span> <input type="text"
+			placeholder="First Name" pattern="[A-Za-z]{2,20}" weight="48" height="48" required/><br>
+		<p>Last Name:</p>
+		<span class="fa fa-group"></span> <input type="text"
+			placeholder="Last Name" pattern="[A-Za-z]{2,20}" required /><br>
+		<p>E-mail:</p>
+		<span class="fa fa-envelope"></span> <input type="email"
+			placeholder="enter E-mail" required /><br>
+		<p>Phone #:</p>
+		<span class="fa fa-phone"></span> <input type="text"
+			placeholder="(845)555-1212" pattern="[0-9]{10}" required /><br>
+		<p>Address:</p>
+		<span class="fa fa-home"></span> <input type="text"
+			placeholder="Address" pattern="[A-Za-z0-9]{5,50}" required /><br>
+		<p>City:</p>
+		<span class="fa fa-home"></span> <input type="text" placeholder="city"
+			pattern="[A-Za-z]{1,20}" required /><br>
+		<p>State:</p>
+		<span class="fa fa-bars"></span> <select required="required">
+			<option>Select your state</option>
+			<option>Delhi</option>
+			<option>Goa</option>
+			<option>Kerala</option>
+			<option>Rajasthan</option>
+			<option>UP</option>
+			<option>Gujarat</option>
+		</select><br>
+		<p>Zip-Code:</p>
+		<span class="fa fa-home"></span> <input type="text"
+			placeholder="Zip-Code" pattern="[0-9]{6}" required /><br>
+		<p>Website or Domain Name:</p>
+		<span class="fa fa-globe"></span> <input type="url"
+			placeholder="Website or domain name" required /><br>
+		<p>Do you have hosting?</p>
+		<input type="radio" name="radio" value="Yes">
+		<p id="yes">Yes</p>
+		<br> <input type="radio" name="radio" value="No">
+		<p id="no">No</p>
+		<br>
+		<p>Project description:</p>
+		<span class="fa fa-pencil"></span>
+		<textarea rows="1" cols="20" placeholder="Project description"></textarea>
+		<br> <input type="submit" />
+	</form>
+	</section>
+	<footer id="footer">&copycpyright2016-17|All rights registered|Metacube Training</footer>
+</body>
+</html>

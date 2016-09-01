@@ -1,0 +1,81 @@
+@CHARSET "ISO-8859-1";
+*{
+	margin:0;
+	padding:0;
+}
+#header{
+	color:MidnightBlue;
+	background-color: LightSteelBlue;
+	padding: 20px 10px 10px 10px;
+	border: 2px  groove white;
+	
+}
+
+#section{
+	padding:2%;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="url"]{
+
+	position:absolute;
+	margin-left:19.8%;
+	width: 30%;
+	margin-top: -1.5%;
+	padding:2px;
+}
+body{
+	background-color: 
+}
+
+span
+{
+	position:absolute;
+	margin-left:18%;
+	display: inline;
+	background-color: gray;
+	padding:4px;
+	margin-right: 0;
+	display: inline-block;
+	margin-top:-1.5%;
+}
+p{
+	width:15%;
+	display:block;
+	color: MidnightBlue;
+	font-size: 17px;
+	font-weight: bolder;
+}
+select{
+	position:absolute;
+	margin-left:19.75%;
+	width: 30%;
+	margin-top: -1.5%;
+}
+input[type="radio"]{
+	position:absolute;
+	margin-left:17.8%;
+	margin-top: -1.5%;
+	display:inline;
+}
+#yes,#no{
+	position:absolute;
+	margin-left:19%;
+	width: 30%;
+	margin-top:  -1.5%;
+}
+textarea {
+	position:absolute;
+	margin-left:19.75%;
+	margin-top:  -1.5%;
+	width: 30%;
+}
+#footer{
+	text-align: center;
+	color:MidnightBlue;
+	background-color: LightSteelBlue;
+	padding: 20px 10px 10px 10px;
+	border: 2px  groove white;
+	
+}
+input[type="submit"]{
+	color: MidnightBlue;
+}
