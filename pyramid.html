@@ -7,7 +7,7 @@
 	<script>
 		var numOfRows = prompt("enter number of rows in pyramid");
 		//function to draw pyramid using for loop
-		function pyramid(totalRow) {
+		function pyramidByFor(totalRow) {
 			for (var row = 0; row < totalRow; row++) {
 				for (var space = row; space < totalRow - 1; space++) {
 					document.write("&nbsp;");
@@ -60,7 +60,7 @@
 		}
 	</script>
 	<h2>Pyramid</h2>
-	<input type="button" onclick=pyramid(numOfRows)
+	<input type="button" onclick=pyramidByFor(numOfRows)
 		value="draw pyramid by for" />
 	<input type="button" onclick=pyramidByWhile(numOfRows)
 		value="draw pyramid by while" />
