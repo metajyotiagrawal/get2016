@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Table</title>
+<head>
+<body>
+	<script>
+		var inp = prompt("Enter a number");
+		function table(num) {
+
+			for (var count = 1; count <= 10; count++) {
+				document.write("Table is: " + (num * count));
+				document.write("<br />");
+			}
+		}
+	</script>
+	<h2>Table</h2>
+
+	<input type="button" onclick=table(inp) value="table" />
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pyramid</title>
+<head>
+<body>
+	<script>
+		var numOfRows = prompt("enter number of rows in pyramid");
+		function pyramid(totalRow) {
+			for (var row = 0; row < totalRow; row++) {
+				for (var space = row; space < totalRow - 1; space++) {
+					document.write("&nbsp;");
+				}
+				for (var rowNum = 0; rowNum <= 2 * row; rowNum++) {
+					document.write("*");
+				}
+				document.write("<br />");
+			}
+
+		}
+		function pyramidByWhile(totalRow) {
+			var row = 0;
+			while (row < totalRow) {
+				var space = row;
+				while (space < totalRow - 1) {
+					document.write("&nbsp;");
+					space++;
+				}
+				var rowNum = 0;
+				while (rowNum <= 2 * row) {
+					document.write("*");
+					rowNum++;
+				}
+				document.write("<br />");
+				row++;
+			}
+		}
+
+		function pyramidByDoWhile(totalRow) {
+			var row = 0;
+			do {
+				var space = row + 1;
+				do {
+					if (space == totalRow) {
+						break;
+					}
+					document.write("&nbsp;");
+					space++;
+				} while (space <= totalRow - 1);
+				var rowNum = 0;
+				do {
+					document.write("*");
+					rowNum++;
+				} while (rowNum <= 2 * row);
+				row++;
+				document.write("<br />");
+			} while (row < totalRow);
+		}
+	</script>
+	<h2>Pyramid</h2>
+	<input type="button" onclick=pyramid(numOfRows)
+		value="draw pyramid by for" />
+	<input type="button" onclick=pyramidByWhile(numOfRows)
+		value="draw pyramid by while" />
+	<input type="button" onclick=pyramidByDoWhile(numOfRows)
+		value="draw pyramid by dowhile" />
+</body>
+</html>
