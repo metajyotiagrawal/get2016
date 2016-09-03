@@ -11,6 +11,7 @@
 			for (var row = 0; row < totalRow; row++) {
 				for (var space = row; space < totalRow - 1; space++) {
 					document.write("&nbsp;");
+					document.write("&nbsp;");
 				}
 				for (var rowNum = 0; rowNum <= 2 * row; rowNum++) {
 					document.write("*");
@@ -25,6 +26,7 @@
 			while (row < totalRow) {
 				var space = row;
 				while (space < totalRow - 1) {
+					document.write("&nbsp;");
 					document.write("&nbsp;");
 					space++;
 				}
@@ -46,6 +48,7 @@
 					if (space == totalRow) {
 						break;
 					}
+					document.write("&nbsp;");
 					document.write("&nbsp;");
 					space++;
 				} while (space <= totalRow - 1);
