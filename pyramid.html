@@ -6,6 +6,7 @@
 <body>
 	<script>
 		var numOfRows = prompt("enter number of rows in pyramid");
+		//function to draw pyramid using for loop
 		function pyramid(totalRow) {
 			for (var row = 0; row < totalRow; row++) {
 				for (var space = row; space < totalRow - 1; space++) {
@@ -18,6 +19,7 @@
 			}
 
 		}
+		//function to draw pyramid by using while loop
 		function pyramidByWhile(totalRow) {
 			var row = 0;
 			while (row < totalRow) {
@@ -35,7 +37,7 @@
 				row++;
 			}
 		}
-
+               //function to draw pyramid by using do while loop
 		function pyramidByDoWhile(totalRow) {
 			var row = 0;
 			do {
