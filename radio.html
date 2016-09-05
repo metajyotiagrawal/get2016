@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Radio Fields"</title>
+</head>
+<body>
+<script>
+function checkClick(){
+
+var first=document.getElementsByName("subject");
+var second=document.getElementsByName("session");
+if(first[0].checked==true && second[0].checked==true){
+alert("You have selected javscript and session1");
+}
+else if(first[1].checked==true && second[0].checked==true){
+alert("You have selected css and session1");
+}
+else if(first[0].checked==true && second[1].checked==true){
+alert("You have selected javascript and session2");
+}
+else if(first[1].checked==true && second[1].checked==true){
+alert("You have selected css and session2");
+}
+else{
+document.getElementById("print").innerHTML="please select both fields";
+}
+}
+</script>
+<input type="radio" name="subject" value="javascript" />Javascript
+<input type="radio" name="subject" value="css" />CSS<br />
+<input type="radio" name="session" value="session1" />Session1
+<input type="radio" name="session" value="session2" />Session2<br />
+<input type="button" onclick=checkClick() value="checkAlert" />
+<div id="print"></div>
+</body>
+</html>

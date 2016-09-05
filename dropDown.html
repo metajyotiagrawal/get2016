@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>dropdownFields</title>
+<link href="cssdropDown.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+<div id="main">
+<div id="dd">
+<div id="dd1">
+<select id="dropDown1">
+<option>Red</option>
+<option>Blue</option>
+<option>Green</option>
+</select>
+</div>
+
+<div id="dd2">
+<select id="dropDown2">
+<option>Circle</option>
+<option>Square</option>
+<option>Rectangle</option>
+</select>
+</div>
+</div>
+<br />
+<input type="radio" name="radio1" />Option1<br />
+<input type="radio" name="radio1" />Option2<br /><br />
+<input type=button onClick="getOutput()" value="click me" id=but />
+</div>
+
+<script>
+function getOutput()
+{
+var r1=document.getElementsByName("radio1");
+if(r1[0].checked==true)
+{
+
+var d1=document.getElementById("dropDown1");
+var str=d1.options[d1.selectedIndex].value;
+
+alert("You have selected from dropDown1 : "+str);
+}
+else if(r1[1].checked==true)
+{var d2=document.getElementById("dropDown2");
+var str=d2.options[d2.selectedIndex].value;
+
+alert("You have selected from dropDown2 :"+str);
+}
+else{
+alert("Please fill the entries");
+}
+}
+
+</script>
+
+</body>
+</html>
