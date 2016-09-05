@@ -1,0 +1,83 @@
+*{
+	margin:0;
+	padding:0;
+}
+#header{
+	color:MidnightBlue;
+	background-color: LightSteelBlue;
+	padding: 20px 10px 10px 10px;
+	border: 2px  groove white;
+	
+}
+
+#section{
+	padding:2%;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="url"]{
+
+	position:absolute;
+	margin-left:19.8%;
+	width: 30%;
+	margin-top: -1.5%;
+	padding:2px;
+}
+input[type="checkBox"]
+{
+	position:absolute;
+	margin-left:5.8%;
+	width: 30%;
+	margin-top: -1.5%;
+	padding:2px;
+}
+#cb1,#cb2,#cb3{
+	position:absolute;
+	margin-left:22%;
+	width: 30%;
+	margin-top:  -1.7%;
+	
+}
+body{
+	background-color: 
+}
+p{
+	width:15%;
+	display:block;
+	color: MidnightBlue;
+	font-size: 17px;
+	font-weight: bolder;
+}
+select{
+	position:absolute;
+	margin-left:19.75%;
+	width: 30%;
+	margin-top: -1.5%;
+}
+input[type="radio"]{
+	position:absolute;
+	margin-left:20%;
+	margin-top: -1.5%;
+	display:inline;
+}
+#yes,#no{
+	position:absolute;
+	margin-left:21%;
+	width: 30%;
+	margin-top:  -1.5%;
+}
+textarea {
+	position:absolute;
+	margin-left:19.75%;
+	margin-top:  -1.5%;
+	width: 30%;
+}
+#footer{
+	text-align: center;
+	color:MidnightBlue;
+	background-color: LightSteelBlue;
+	padding: 20px 10px 10px 10px;
+	border: 2px  groove white;
+	
+}
+input[type="submit"]{
+	color: MidnightBlue;
+}

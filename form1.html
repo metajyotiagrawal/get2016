@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<link href="cssForm1.css" type="text/css" rel="stylesheet" />
+<script  type="text/javascript" src="jsForm.js"></script> 
+</head>
+
+<body>
+ 
+<header id="header">Contact Us Today !</header>
+<section id="section">
+	<form method="post" name="myform" action="submitted.png">
+		<p>Name:</p>
+		 <input type="text"
+			placeholder="Name" name="name" /><br>
+		<p>E-mail:</p>
+		 <input type="text"
+			placeholder="enter E-mail" value="" name="email"/><br>
+		<p>Phone #:</p>
+		 <input type="text"
+			placeholder="(845)555-1212" name="phonen" /><br>
+		<p>Address:</p>
+		 <textarea rows="1" cols="20" placeholder="Address" name="add"></textarea><br>
+		
+		<p>Gender</p>
+		<input type="radio" name="gender" value="Yes">
+		<p id="yes">Male</p>
+		<br> <input type="radio" name="gender" value="No">
+		<p id="no">Female</p>
+		<br>
+		<p>Highest Qualification</p>
+		<select id="dropDown1">
+           <option>Btech</option>
+              <option>Mtech</option>
+          <option>MCA</option>
+             </select><br>
+			 <p>Certification :</p>
+			 	<input type="checkbox" name="A" value="A" ><p id="cb1"> A</p><br>
+  <input type="checkbox" name="A" value="B" ><p id="cb2"> B</p><br>
+  <input type="checkbox" value="C" name="A"><p  id="cb3"> C</p><br>
+		
+		<br> <input type="submit" onclick="return validateForm()" />
+	</form>
+	</section>
+	<footer id="footer">&copycpyright2016-17|All rights registered|Metacube Training</footer>
+</body>
+</html>
