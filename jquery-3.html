@@ -8,45 +8,56 @@
 <script>
 	$(document).ready(
 			function() {
-				$("#showSpan").click(function() {
+				//to select all SPAN with class name: “message”
+                                        $("#showSpan").click(function() {
 					$("span.message").css('color', 'blue');
 				})
+
+                                //to select first DIV in a document that has class: “box”
 
 				$("#showDiv").click(function() {
 					$("div.box:first").css("color", "red");
 				})
-
-				$("#imag").click(function() {
+				
+                                //to select all BUTTONS in a document
+                                $("#imag").click(function() {
 					$(":button").css("border", "2px solid brown");
 				})
 
-				$("#image").click(function() {
+                                //to select all IMAGES having alternate text as: “hello”
+                        	$("#image").click(function() {
 					$('img[alt="hello"]').css("width", "250px");
 				})
 
-				$("#input").click(
+                                //to select all TEXT BOXES under a div having Id = “myDiv”
+                                $("#input").click(
 						function() {
 							$("input:text", $("div[id='myDiv']")).css(
 									'background-color', 'grey');
 						})
 
-				$("#inputnm").click(function() {
+                                //to select all TEXT BOXES with name starting by: “txt”
+                                $("#inputnm").click(function() {
 					$("input[name^='txt']").css("border", "2px solid black");
 				})
 
-				$("#par").click(function() {
+                                //to select all PARAGRAPHS element, not having class “box”
+                                $("#par").click(function() {
 					$("p:not(p.box)").css("border", "2px solid black");
 				})
 
+                                //to selects all the DIVS having either “box” or “error” class
 				$("#divpart").click(function() {
 					$("div.box,div.error").css("margin-left", "50px");
 				})
 
-				$("#divp").click(function() {
+                                //to selects all the DIVS having both “box” and “error” class.
+                                $("#divp").click(function() {
 					$(".box.error").css("margin-left", "100px");
 				})
 
-				$("#omy").click(function() {
+                                //to find all the SPAN having “info” class in a DIV with id = “myDiv”
+                                $("#omy").click(function() {
 					$("span.info").css("border", "2px solid indianRed");
 				})
 			});
