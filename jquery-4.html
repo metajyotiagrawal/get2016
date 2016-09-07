@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UsingJQuery</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</style>
+<script>
+	$(document).ready(function() {
+		$("#color").click(function() {
+			$("tr:even").css("background-color", "BurlyWood ");
+			$("tr:odd").css("background-color", "indianred");
+		})
+
+	});
+</script>
+</head>
+<body>
+	<table id="table1" border=1>
+		<tr>
+			<td>red</td>
+			<td>circle</td>
+		</tr>
+		<tr>
+			<td>blue</td>
+			<td>square</td>
+		</tr>
+		<tr>
+			<td>yellow</td>
+			<td>rectangle</td>
+		</tr>
+		<tr>
+			<td>green</td>
+			<td>semicircle</td>
+		</tr>
+	</table>
+	<br />
+	<input type="button" id="color" value="applyCssOnTable" />
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyFirstSpan</title>
+<style>
+#spn {
+	display: block;
+	margin-left: 2%;
+	padding: 10px;
+}
+</style>
+</head>
+<body>
+
+	<input type=button value="Show" onclick="fnShow()" />
+	<input type=button value="Hide" onclick="fnHide()" />
+	<input type=button onclick="fnshowORhide()" id="but" value="toggle"></input>
+	<br />
+	<span id=spn>MySpan</span>
+	<br />
+	<script type="text/javascript">
+		function fnShow() {
+			document.getElementById("spn").style.display = 'block';
+
+		}
+		function fnHide() {
+
+			document.getElementById("spn").style.display = 'none';
+
+		}
+		function fnshowORhide() {
+
+			var displaySetting = document.getElementById("spn").style.display;
+			var butt = document.getElementById("but");
+			if (displaySetting == 'block') {
+				document.getElementById("spn").style.display = 'none';
+				butt.value = "show";
+			} else {
+				document.getElementById("spn").style.display = 'block';
+				butt.value = "hide";
+			}
+		}
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>traversing demo</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link href="cssjquery5.css" rel="stylesheet" />
+<script>
+	$(document).ready(function() {
+		$("#button1").click(function() {
+			$("#div2").parent().css("border-color", "blue");
+		})
+
+		$("#button2").click(function() {
+			$("#div32").parents().css("border-width", "5px");
+		})
+
+		$("#button3").click(function() {
+			$("#div32").parentsUntil("#main").css("border-color", "green");
+		})
+
+		$("#button4").click(function() {
+			$("#div1").closest("div").css("border-color", "yellow");
+		})
+
+		$("#button5").click(function() {
+			$("li").siblings().css("border", "2px solid teal");
+		})
+
+		$("#button6").click(function() {
+			$("#div1").next().css("border", "2px solid teal");
+		})
+
+		$("#button7").click(function() {
+			$("#div1").nextAll().css("margin-left", "30px");
+		})
+	});
+</script>
+</head>
+<body>
+	<div id="main">
+		<div id="div1">
+			<span>MySpan</span>
+			<p>My First Para</p>
+			<p>My Second Para</p>
+			<p>My Third Para</p>
+			<p>My Fourth Para</p>
+		</div>
+		<div id="div2">
+			<img src="image.png" alt="new" />
+		</div>
+		<div id="div3">
+			<div id="div31">
+				<ul>
+					<li>item1</li>
+					<li>item2</li>
+					<li>item3</li>
+				</ul>
+			</div>
+			<div id="div32">
+				<p>My Para</p>
+			</div>
+		</div>
+		<div id="div4">
+			<input type="button" id="button1" value="applyCssOnParent" /> <input
+				type="button" id="button2" value="applyCssOnParents" /><br />
+			<br /> <input type="button" id="button3"
+				value="applyCssOnParentuntil" /> <input type="button" id="button4"
+				value="applyCssOnClosest" /><br />
+			<br /> <input type="button" id="button5" value="applyCssOnSiblings" />
+			<input type="button" id="button6" value="applyCssOnNext" /><br />
+			<br /> <input type="button" id="button7" value="applyCssOnNextAll" />
+		</div>
+
+	</div>
+</body>
+</html>

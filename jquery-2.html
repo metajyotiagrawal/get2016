@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+	<div style="height: 30px;">
+		<span id="spanelement">You can hide or show this text </span>
+	</div>
+	<div>
+		<button type="button" id="buttonhide">Hide</button>
+	</div>
+
+	<script>
+		$(document).ready(init);
+
+		function init() {
+			$('#buttonhide').click(function() {
+				if ($('#buttonhide').html() == 'Hide') {
+
+					$("#spanelement").hide();
+					$('#buttonhide').html('Show');
+				} else {
+					$("#spanelement").show();
+					$('#buttonhide').html('Hide');
+				}
+			});
+
+		}
+	</script>
+
+</body>
+
+
+</html>

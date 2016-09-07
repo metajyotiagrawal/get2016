@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UsingJQuery</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link href="cssJquery.css" rel="stylesheet" />
+<script>
+	$(document).ready(
+			function() {
+				$("#showSpan").click(function() {
+					$("span.message").css('color', 'blue');
+				})
+
+				$("#showDiv").click(function() {
+					$("div.box:first").css("color", "red");
+				})
+
+				$("#imag").click(function() {
+					$(":button").css("border", "2px solid brown");
+				})
+
+				$("#image").click(function() {
+					$('img[alt="hello"]').css("width", "250px");
+				})
+
+				$("#input").click(
+						function() {
+							$("input:text", $("div[id='myDiv']")).css(
+									'background-color', 'grey');
+						})
+
+				$("#inputnm").click(function() {
+					$("input[name^='txt']").css("border", "2px solid black");
+				})
+
+				$("#par").click(function() {
+					$("p:not(p.box)").css("border", "2px solid black");
+				})
+
+				$("#divpart").click(function() {
+					$("div.box,div.error").css("margin-left", "50px");
+				})
+
+				$("#divp").click(function() {
+					$(".box.error").css("margin-left", "100px");
+				})
+
+				$("#omy").click(function() {
+					$("span.info").css("border", "2px solid indianRed");
+				})
+			});
+</script>
+</head>
+<body>
+	<div id=query1>
+		<span class="message">My First span</span><br /> <span class="other">My
+			Second span</span><br /> <span class="message">My Third span</span><br />
+		<span class="message">My Fourth span</span><br /> <input
+			type="button" id="showSpan" value="showSpan" /><br />
+		<br />
+	</div>
+	<div id=query2>
+		<div class="box error">My First Div</div>
+		<div class="box">My Second Div</div>
+		<div class="square">My Third Div</div>
+		<div class="error">My Fourth Div</div>
+		<input type="button" id="showDiv" value="showFirstDiv" /> <br /> <br />
+	</div>
+	<input type="button" id="imag" value="applyCssOnButton" />
+	<br />
+	<br />
+	<img src="image.png" alt="new" />
+	<img src="image2.png" alt="hello" />
+	<img src="image3.png" alt="hello" />
+	<br />
+	<input type="button" id="image" value="applyCssOnimage" />
+	<br />
+	<br />
+	<div id="myDiv">
+		<input type="text" placeholder=name name="txtu" /> <input type="text"
+			placeholder=number name="bye" /> <input type="text"
+			placeholder=address name="txtfr" /><br />
+		<br /> <span class="info">MY First span</span><br /> <span
+			class="uninfo">My Second span</span><br /> <span class="info">My
+			Third span</span><br /> <span class="uninfo">My Fourth span</span><br /> <input
+			type="button" id="input" value="applyCssOntext" /> <input
+			type="button" id="inputnm" value="applyCssOntextOnbasisOfName" />
+
+
+	</div>
+	<div id="para">
+		<p class="box">My First Para</p>
+		<p class="Unbox">My Second Para</p>
+		<p class="box">My Third Para</p>
+		<p class="Unbox">My Fourth Para</p>
+		<input type="button" id="par" value="applyCssOnpara" /><br />
+		<br /> <input type="button" id="divpart" value="applyCssOndiv" /> <input
+			type="button" id="divp" value="applyCssOndiv1" /> <input
+			type="button" id="omy" value="applyOnmydiv" />
+	</div>
+</body>
+</html>
