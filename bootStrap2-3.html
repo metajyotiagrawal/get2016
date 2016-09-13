@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+	<div class="container">
+		<h2>Sample Form</h2>
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label class="control-label col-lg-1 col-md-1 col-sm-2 text-left hidden-xs"
+					for="title">Movie Title:</label>
+				<div class="col-lg-5 col-md-5 col-sm-10">
+					<input type="text" class="form-control " id="title"
+						placeholder="Enter movie title">
+				</div>
+				<label class="control-label col-lg-1 col-md-1 col-sm-2 hidden-xs" for="genre">Genre:</label>
+				<div class="col-lg-5 col-md-5 col-sm-10">
+					<select class="form-control">
+						<option disabled selected>Choose a genre</option>
+						<option>Child</option>
+						<option>Youth</option>
+						<option>Aged</option>
+
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-lg-1 col-md-1 col-sm-2 hidden-xs" for="dir">Director:</label>
+				<div class="col-lg-2 col-md-5 col-sm-10">
+					<input type="text" class="form-control" id="dir"
+						placeholder="Enter Director">
+				</div>
+				<label class="control-label col-lg-1 col-md-1 col-sm-2 hidden-xs" for="wr">Writer:</label>
+				<div class="col-lg-2 col-md-5 col-sm-10">
+					<input type="text" class="form-control" id="wr"
+						placeholder="Enter Writer">
+				</div>
+				<label class="control-label col-lg-1 col-md-1 col-sm-2 hidden-xs" for="pr">Producer:</label>
+				<div class="col-lg-2 col-md-5 col-sm-10">
+					<input type="text" class="form-control" id="pr"
+						placeholder="Enter Producer">
+				</div>
+				<label class="control-label col-lg-1 col-md-1 col-sm-2 hidden-xs" for="cmp">Composer:</label>
+				<div class="col-lg-2 col-md-5 col-sm-10">
+					<input type="text" class="form-control" id="cmp"
+						placeholder="EnterComposer">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="control-label col-lg-1 col-md-1 col-sm-2 text-left hidden-xs"
+					for="tweb">Website:</label>
+				<div class="col-lg-5 col-md-5 col-sm-10">
+					<input type="text" class="form-control" id="tweb"
+						placeholder="Enter website">
+				</div>
+				<label class="control-label col-lg-1 col-md-1 col-sm-2 hidden-xs" for="yout">Youtube
+					trailer:</label>
+				<div class="col-lg-5 col-md-5 col-sm-10">
+					<input type="text" class="form-control"
+						placeholder="youtube trailer" id="yout">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="control-label col-lg-1 hidden-xs" for="rvw">Review: </label>
+				<div class="col-lg-12">
+					<textarea class="form-control" id="rvw" placeholder="Enter Review"
+						rows="5" cols="4"></textarea>
+				</div>
+			</div>
+			<div class="form-group ">
+				<label class="control-label col-lg-1 text-left hidden-xs " for="rt">Rating:
+				</label>
+				<div class="col-lg-3 col-md-3 col-sm-3 text-danger">
+					<input type="radio" name="rad">Terrible</input>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 text-primary">
+					<input type="radio" name="rad">Watchable</input>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 text-success">
+					<input type="radio" name="rad">Best ever</input>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<button type="button" class="btn btn-default col-lg-1">Cancel</button>
+				<button type="button" class="btn btn-primary col-lg-1">Validate</button>
+				<button type="button" class="btn btn-success col-lg-1">Submit</button>
+				<button type="button" class="btn btn-warning col-lg-1">Delete</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

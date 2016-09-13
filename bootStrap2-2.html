@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Case</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+a:hover {
+	
+}
+</style>
+<script>
+	function fnAddTbl() {
+		var moviedata = {};
+
+		moviedata = [ {
+			MovieTitle : "abc",
+			Genre : "Action",
+			Director : "ABC"
+		}, {
+			MovieTitle : "def",
+			Genre : "Action",
+			Director : "DEF"
+		}, {
+			MovieTitle : "ghi",
+			Genre : "Romantic",
+			Director : "GHI"
+		} ];
+		var table = $("#movieTable").children();
+		table.append('<tr><td>' + "Movie Title" + '</td><td>' + "Genre"
+				+ '</td><td>' + "Director" + '</td></tr>');
+		for (var i = 0; i < moviedata.length; i++) {
+			table.append('<tr><td>' + moviedata[i].MovieTitle + '</td><td>'
+					+ moviedata[i].Genre + '</td><td>' + moviedata[i].Director
+					+ '</td></tr>');
+		}
+	}
+	function searchMovie() {
+		var moviedata = {};
+
+		moviedata = [ {
+			MovieTitle : "abc",
+			Genre : "Action",
+			Director : "ABC"
+		}, {
+			MovieTitle : "def",
+			Genre : "Action",
+			Director : "DEF"
+		}, {
+			MovieTitle : "ghi",
+			Genre : "Romantic",
+			Director : "GHI"
+		} ];
+		var flag = false;
+		var movie = document.getElementById("movie").value;
+		$('#searchMovie tr').remove();
+		$('#movieTable tr').remove();
+		for (var i = 0; i < moviedata.length; i++) {
+			if (moviedata[i].MovieTitle == movie) {
+				flag = true;
+				var table = $('#searchMovie').children();
+				table.append('<tr><td>' + "<strong>Movie Title</strong>"
+						+ '</td><td>' + "<strong>Genre</strong>" + '</td><td>'
+						+ "<strong>Director</strong>" + '</td></tr>');
+				table.append('<tr><td>' + moviedata[i].MovieTitle + '</td><td>'
+						+ moviedata[i].Genre + '</td><td>'
+						+ moviedata[i].Director + '</td></tr>');
+
+			}
+		}
+		if (flag == false) {
+			$('#searchMovie tr').remove();
+			$('#movieTable tr').remove();
+			alert("Invalid Movie name");
+		}
+	}
+	$(function() {
+		$("#pg").pagination({
+			items : 10,
+			itemsOnPage : 5,
+			cssStyle : 'light-theme'
+		});
+	});
+</script>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Metacube</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav  hidden-sm">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">logout Menu</a></li>
+					<li><a href="#">Movie from</a></li>
+					<li><a href="#" onclick="fnAddTbl()">Movie Reviews</a></li>
+					<li><a class="dropdown-toggle" data-toggle="dropdown" href="#">CSS<span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Button</a></li>
+							<li><a href="#">Panel</a></li>
+							<li><a href="#">Grid</a></li>
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Pagination</a></li>
+							<li><a href="#">Progress bar</a></li>
+						</ul></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right ">
+					<li><input id="movie" type="text" class="form-control"
+						placeholder="Search this site"
+						name="src                     h-term" /></li>
+					<li><button class="btn btn-default" type="submit"
+							style="float: right">
+							<i class="glyphicon glyphicon-search" onclick="searchMovie()"></i>
+						</button></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<table id="movieTable" class="table table-hover table-bordered">
+		<tr></tr>
+	</table>
+	<table id="searchMovie" class="table table-hover table-bordered">
+		<tr></tr>
+	</table>
+	<center>
+		<span id="pg" class="clear"></span>
+	</center>
+
+</body>
+</html>
