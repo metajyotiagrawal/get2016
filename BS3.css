@@ -1,0 +1,102 @@
+#header {
+	margin: 0;
+	background-color: teal;
+}
+#footer{
+background-color: teal;
+}
+.para {
+	background-color:#a4bca0;
+	border-radius: 5px;
+	padding:10px;
+}
+
+.glyphicon.glyphicon-bell, .glyphicon.glyphicon-volume-up, .glyphicon.glyphicon-heart,
+	.glyphicon.glyphicon-camera ,.glyphicon.glyphicon-user{
+	font-size: 40px;
+	color: white;
+}
+.glyphicon.glyphicon-tags,.glyphicon.glyphicon-envelope{
+margin:3px;
+}
+
+.glyphicon.glyphicon-align-left, .glyphicon.glyphicon-comment,
+	.glyphicon.glyphicon-edit, .glyphicon.glyphicon-info-sign {
+	border: 1px solid black;
+	padding: 2px;
+	margin: 5px;
+}
+
+#notification {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#fav {
+	background-color: LightCoral;
+	margin: 10px;
+	padding: 10px;
+	radius: 5px;
+	border-radius: 5px;
+}
+
+#photoGallery {
+	background-color: PaleVioletRed;
+	margin: 10px;
+	padding: 10px;
+	radius: 5px;
+	border-radius: 5px;
+}
+
+#announcement {
+	background-color: SeaGreen;
+	margin: 10px;
+	padding: 10px;
+	radius: 5px;
+	border-radius: 5px;
+}
+
+.circle {
+	border: 2px solid white;
+	border-radius: 500px;
+	padding: 10px;
+}
+.circleUser{
+border: 2px solid pink;
+	border-radius: 500px;
+	padding: 10px;
+background-color:pink;
+}
+.settings {
+	background-color: OliveDrab;
+	padding: 3px;
+}
+
+.fa.fa {
+	margin: 3px;
+}
+
+#left2 {
+	background-color: MistyRose;
+	padding: 20px;
+	margin: 5px 0px;
+}
+
+#right1{
+padding:10px;
+	margin-bottom:20px;
+	background-color:MistyRose;
+}
+.modal-header-warning {
+	color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #f0ad4e;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
